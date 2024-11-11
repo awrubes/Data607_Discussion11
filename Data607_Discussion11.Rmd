@@ -1,0 +1,44 @@
+---
+title: "Data607_Discussion11"
+author: "aw"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## YouTube Recommendation System
+
+### Overview
+
+YouTube attracts around **2.49 billion monthly active users** (roughly 47% of global internet users each month), each user spending on average 48 minutes per day on the platform. Given these statistics, it's no surprise that YouTube's recommendation algorithm is lauded as one of the most effective at delivering relevant and meaningful content to users.
+
+As a frequent Youtube(r), I wanted to further analyze the recommendation systems at play to understand, at a high level, what makes it such a powerful platform.
+
+## Scenario Design Analysis
+
+**Who are the target users?**
+
+Globally, YouTube appears to a male audience (54.4%), with more than half of all users falling into the Gen Z and Millennial age buckets. This information tells us that the users are digital natives, savvy users of the internet. It's also worth noting that 89% of those with a college level education use YouTube, which drops to 70% for adults with no degree. it's not that surprising, given the aforementioned stats, that 63% of all views on YouTube come from mobile devices. Given this information, I'd conclude that the target user of YouTube is someone who falls in the 24-34 age range and primarily uses their phone to access content.
+
+**What are their key goals?**
+
+I would imagine that high-level user goals fall into a number of buckets, which might include: entertainment, education/learning, staying informed/news, community building. It's safe to suppose that a majority of target user interactions with the YouTube platform can be categorized into one of the above buckets.
+
+**How can you help them accomplish those goals?**
+
+The best way to help target users accomplish these goals is to, obviously, provide relevant content that is additive to the immediate experience on the platform. This means that, while a user may identify with multiple "tags" or "categories" of video, it wouldn't make sense for YouTube to recommend just any video that might be relevant to one of the many tags associated with my user profile, but rather recommend a video that is related to the current video being watched.
+
+## Reverse Engineering
+
+At first glance, without any technical deep diving, it seems that the YouTube recommendation algorithm uses data from a variety of sources, metadata, descriptions, video content, to get a deep contextual understanding of the video in order to make educated recommendation decisions. The flow of recommendation seems to work as follows: first, YouTube serves a variety of "related" videos to the user from channels or on topics of interest, these videos are time-bound, or recently published. Once a video is clicked on, the algorithm kicks into play serving content related to the current video being watched, in the form of YouTube shorts and normal videos. How does YouTube know whether or not a video should be served to a certain user is based on the data gathered on the video and the audience profile of the user.
+
+## Recommendations for the recommend-er 
+
+I think the YouTube algorithm under utilizes playlists as a way of delivering more robust content on specific topics. This is more geared to target users who are using the platform to learn or develop new skills, professional or leisurely. As it stands, YouTube relies solely on the creator to build playlists centered around specific topics, and the recommendation algorithm to provide related videos to users, essentially filling in the gaps if a playlist doesn't exist. However, when trying to learn new skills, the algorithm does a poor job of serving the right sequence of videos or curating content that builds on prior knowledge of a topic.
+
+This could be changed by using algorithm-constructed playlists that emphasize learning paths and cohesion across videos.
+
+### 
